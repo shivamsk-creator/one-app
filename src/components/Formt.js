@@ -19,6 +19,9 @@ export default function Formt(props) {
     }
     const [text, setText] = useState("");
     // setText('This is text 2');
+
+    var word=0;
+    word=text.split(" ").length;
     return (
         <>
             <div className="container" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
@@ -32,8 +35,9 @@ export default function Formt(props) {
 
             <div className="container my-4" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
                 <h2>Your Text Summary</h2>
-                <p>{text.split(" ").length} Words and {text.length} Characters</p>
-                <p>{0.008 * text.split(" ").length} Minutes Read</p>
+                
+                <p>{word} Words and {text.length} Characters</p>
+                <p>{0.08 * text.split(" ").length} Minutes Read</p>
             </div>
 
             <div className="container" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>

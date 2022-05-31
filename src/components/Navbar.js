@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+// import {Link} from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -14,7 +16,7 @@ export default function Navbar(props) {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">{props.aboutText}</a>
+              <a className="nav-link" href="/about">{props.aboutText}</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,34 +48,6 @@ export default function Navbar(props) {
 //     title: PropTypes.string,
 //     aboutText: PropTypes.string
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
